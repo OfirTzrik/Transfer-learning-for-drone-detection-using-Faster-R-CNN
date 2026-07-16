@@ -12,7 +12,7 @@ Loss, validation mAP, and learning rate schedule over training:
 
 ![Training graphs](graphs.png)
 
-Confusion matrix on the validation set:
+Confusion matrix on the test set:
 
 ![Confusion matrix](confusion_matrix.png)
 
