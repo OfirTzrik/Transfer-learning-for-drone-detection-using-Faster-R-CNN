@@ -64,3 +64,7 @@ Run the notebook cells in order to reproduce training and inference.
 - Main: [drone-detection-dataset](https://huggingface.co/datasets/pathikg/drone-detection-dataset)
 - Negatives: [FGVC-Aircraft](https://huggingface.co/datasets/Voxel51/FGVC-Aircraft), [CUB-200](https://huggingface.co/datasets/cassiekang/cub200_dataset)
 It would be better to train with better negatives but these are the best we found in the time constraints we had and we couldn't take any other large dataset due to hardware constraints.
+
+## Disclaimer
+
+This is a college course project, not a production-ready system. Dataset size and diversity are limited, negative-class data is suboptimal (see note above), and performance hasn't been validated outside this dataset's distribution. Use accordingly.
