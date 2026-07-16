@@ -22,9 +22,9 @@ Precision, recall, and F2 score:
 
 ## Detection Results
 
-![Detection result 1](Screenshot%20from%202026-07-09%2020-17-02.png)
-![Detection result 2](Screenshot%20from%202026-07-09%2020-17-13.png)
-![Detection result 3](Screenshot%20from%202026-07-09%2020-17-20.png)
+![Detection result 1](test1.png)
+![Detection result 2](test2.png)
+![Detection result 3](test3.png)
 
 ## Contents
 
