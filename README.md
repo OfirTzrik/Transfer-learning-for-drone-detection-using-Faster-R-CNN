@@ -16,9 +16,14 @@ Confusion matrix on the test set:
 
 ![Confusion matrix](confusion_matrix.png)
 
-Precision, recall, and F2 score:
+Precision, recall, F1 and F2 scores:
 
-![Scores](scores.png)
+| Metric | Score |
+|---|---|
+| Precision | 0.950918 |
+| Recall | 0.886483 |
+| F1 | 0.917571 |
+| F2 | 0.898662 |
 
 ## Detection Results
 
