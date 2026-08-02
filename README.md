@@ -16,6 +16,10 @@ Confusion matrix on the test set:
 
 ![Confusion matrix](confusion_matrix.png)
 
+PR curve:
+
+![PR curve](pr_curve.png)
+
 Precision, recall, F1 and F2 scores:
 
 | Metric | Score |
