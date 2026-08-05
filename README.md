@@ -37,9 +37,9 @@ $$F_\beta = (1 + \beta^2) \cdot \frac{\text{precision} \cdot \text{recall}}{\bet
 
 **Schedule.** 5-epoch linear warmup, then `ReduceLROnPlateau` on validation mAP@50-95 (factor 0.5, patience 3). Max 50 epochs, early stopping at patience 7. Best checkpoint by mAP@50-95, not mAP@50 — the latter saturates early while localization keeps improving.
 
-**Mixed precision.** `torch.amp.autocast` + `GradScaler`.
+**Mixed precision.** `torch.amp.autocast` + `GradScaler` to reduce memory usage and epoch times.
 
-**Threshold selection.** Not guessed. Validation predictions are collected once, then thresholds 0.05–0.99 (step 0.01) are swept through the full pipeline (score filter → NMS at IoU 0.5 → matching) and the best F2 is kept. The test set is used once, at the end.
+**Threshold selection.** Validation predictions are collected once, then thresholds 0.05–0.99 (step 0.01) are swept through the full pipeline (score filter → NMS at IoU 0.5 → matching) and the best F2 is kept. The test set is used once, at the end.
 
 **Matching.** Each ground-truth box is matched at most once: the first prediction reaching IoU ≥ 0.3 with a free box is a TP, a duplicate on an already-matched drone is a FP, unmatched ground truth is a FN.
 
