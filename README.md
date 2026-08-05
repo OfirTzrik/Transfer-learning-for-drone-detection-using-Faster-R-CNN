@@ -48,7 +48,7 @@ $$F_\beta = (1 + \beta^2) \cdot \frac{\text{precision} \cdot \text{recall}}{\bet
 | Split | Source | Role |
 |---|---|---|
 | Train | [pathikg/drone-detection-dataset](https://huggingface.co/datasets/pathikg/drone-detection-dataset) (95%) + negatives | Fine-tuning |
-| Validation | 5% held out from train (seed 42) | Checkpoint selection, threshold scan |
+| Validation | 5% held out from train | Checkpoint selection, threshold scan |
 | Test | Dataset's own test split | Final evaluation only |
 | Negatives | [FGVC-Aircraft](https://huggingface.co/datasets/Voxel51/FGVC-Aircraft), [CUB-200](https://huggingface.co/datasets/cassiekang/cub200_dataset) | Background-only images |
 
