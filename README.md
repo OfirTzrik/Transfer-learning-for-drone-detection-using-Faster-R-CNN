@@ -17,7 +17,7 @@ Test set, at the validation-selected confidence threshold:
 | F1 | 0.918 |
 | **F2** (primary) | **0.899** |
 
-Precision and recall are computed with a **relaxed matching criterion of IoU ≥ 0.3**, not the conventional 0.5 — the application only needs the box to point at the drone, not to fit it tightly — so they are not directly comparable to numbers reported at IoU 0.5.
+Precision and recall are computed with a **relaxed matching criterion of IoU ≥ 0.3**, not the conventional 0.5 — the application only needs the box to point at the drone, not to fit it tightly.
 
 F2 is the headline metric: F-beta with β = 2 weights recall four times as heavily as precision.
 
