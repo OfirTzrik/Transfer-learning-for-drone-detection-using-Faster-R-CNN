@@ -90,7 +90,7 @@ pip install torch torchvision torchmetrics datasets scikit-learn matplotlib pand
 jupyter notebook notebook.ipynb
 ```
 
-Run the cells in order. On an AMD RDNA2 GPU, run the first cell (it sets `HSA_OVERRIDE_GFX_VERSION=10.3.0`); on NVIDIA or CPU, skip it. Batch size 4 fits in 12 GB VRAM at 480×640.
+Run the cells in order. On an AMD RDNA2 GPU, run the first cell (it sets `HSA_OVERRIDE_GFX_VERSION=10.3.0`); on NVIDIA or CPU, skip it.
 
 ## Limitations
 
